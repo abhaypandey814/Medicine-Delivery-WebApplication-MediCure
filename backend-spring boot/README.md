@@ -1,4 +1,4 @@
-# Zosh Food
+# Medicine Delivery WebApplication
 
 1. **User:**
     - ID (Auto-generated)
@@ -10,18 +10,18 @@
     - Role (Customer or Restaurant Owner)
     - Registration Date
     - Last Login Date
-2. **Restaurant:**
+2. **Medicine Shops:**
     - ID (Auto-generated)
     - Name
     - Description
-    - Cuisine Type
+    - Medicine Type
     - Address
     - Contact Information
     - Opening Hours
     - Ratings
     - Image URL
     - Registration Date
-3. **Menu Item:**
+3. **Medicine Item:**
     - ID (Auto-generated)
     - Name
     - Description
@@ -29,7 +29,6 @@
     - Category
     - Image URL
     - Availability Status
-    - Restaurant (reference to Restaurant entity)
     - Creation Date
 4. **Order:**
     - ID (Auto-generated)
@@ -63,7 +62,6 @@
 8. **Review/Rating:**
     - ID (Auto-generated)
     - Customer (reference to User entity)
-    - Restaurant (reference to Restaurant entity)
     - Rating
     - Review Text
     - Timestamp
@@ -75,7 +73,7 @@
     - Terms and Conditions
 10. **Notification:**
     - ID (Auto-generated)
-    - Recipient (reference to User, Restaurant, or Delivery Executive entity)
+    - Recipient (reference to User, or Delivery Executive entity)
     - Message
     - Timestamp
     - Read Status
